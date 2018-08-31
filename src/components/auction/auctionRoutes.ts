@@ -1,0 +1,26 @@
+import AuctionController from './auctionController';
+import * as express from 'express';
+import { Request, Response, NextFunction } from "express";
+import { varifyToken } from '../util/permission';
+const router = express.Router();
+const auction = new AuctionController();
+
+router.get('/test', (req: Request, res: Response) => { console.log("**You are in Auction routes**"); });
+router.post('/addAuction', varifyToken, (req: Request, res: Response) => { auction.addAuction(req, res); });
+router.put('/updateAuction', varifyToken, (req: Request, res: Response) => { auction.updateAuction(req, res); });
+router.delete('/removeAuction', varifyToken, (req: Request, res: Response) => { auction.removeAuction(req, res); });
+router.delete('/removeMultiple', varifyToken, (req: Request, res: Response) => { auction.removeMultiple(req, res); });
+router.post('/duplicateProduct', varifyToken, (req: Request, res: Response) => { auction.duplicateProduct(req, res); });
+router.get('/getAuction', varifyToken, (req: Request, res: Response) => { auction.getAuction(req, res); });
+router.get('/getAuctionByObjectId', varifyToken, (req: Request, res: Response) => { auction.getAuctionByObjectId(req, res); });
+router.post('/auctionList', varifyToken, (req: Request, res: Response) => { auction.auctionList(req, res); });
+router.get('/getUpcomingActions', varifyToken, (req: Request, res: Response) => { auction.getUpcomingActions(req, res); });
+router.get('/getWinningActions', varifyToken, (req: Request, res: Response) => { auction.getWinningActions(req, res); });
+router.post('/applyBids', varifyToken, (req: Request, res: Response) => { auction.applyBids(req, res); });
+router.post('/createAuctionBookmark', varifyToken, (req: Request, res: Response) => { auction.createAuctionBookmark(req, res); });
+router.get('/changesAuctionStatus', varifyToken, (req: Request, res: Response) => { auction.changesAuctionStatus(); });
+router.get('/getAuctionBookmarkByUserId', varifyToken, (req: Request, res: Response) => { auction.getAuctionBookmarkByUserId(req, res); });
+// router.post('/getProductDetail', varifyToken, (req: Request, res: Response) => { auction.getProductDetail(req, res); });
+// router.post('/auctionBidders', varifyToken, (req: Request, res: Response) => { auction.auctionBidders(req, res); });
+// router.post('/getOpeningActions', varifyToken, (req: Request, res: Response) => { auction.getOpeningActions(req, res); });
+export default router;

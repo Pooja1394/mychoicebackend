@@ -1,0 +1,1 @@
+{"version":3,"file":"typeModel.js","sourceRoot":"","sources":["../../../../src/components/notification/typeModel.ts"],"names":[],"mappings":";;;;;AAAA,wDAA+C;AAG/C,MAAM,MAAM,GAAG,kBAAQ,CAAC,MAAM,CAAC;AAC/B,MAAM,UAAU,GAAG,IAAI,MAAM,CAAC;IAC5B,IAAI,EAAE;QACA,IAAI,EAAE,KAAK;QACX,GAAG,EAAE,KAAK;KACb;CACJ,CAAC,CAAC;AACH,kBAAe,kBAAQ,CAAC,KAAK,CAAC,MAAM,EAAE,UAAU,CAAC,CAAC"}

@@ -1,0 +1,44 @@
+*********** today's target *************
+
+1) Riyasat 
+	a)  buttons (enable/disable , yes/no, open/close) must be
+		- toggle  
+		- small in size as shows in prototype.
+	b) fontsize and fontfamily of whole project
+	c) also provide options for lock/unlock status in table
+	d) check reset button work properly
+	e) Export csv not working (contact Sumit sir)
+	d) page filter not working.
+	f) Remove "Management" word from all menus from sider.
+	g) samll font size require in table (contact Sumit sir).
+	h) In filter "All" not working properly.
+	i) text alignment in table (follow prototype)
+	j) Remember Me in login page not working
+	k) Cancel button not woking  which is set with create button
+	l) We have to remove Back button (contact Sumit sir)
+	m) When i am zooming the screen little bit then heading of pages getting disturb.
+	n) i can filter by User ID, Type, Registration Date, Last Login Date and Balance.
+	   When i choose "All" or remove the value in textbox, system must describe all rows or records back.
+	o) 
+
+
+2) Yash
+	a) Please provide default value for type(fb/google/manual) or you can remove the records from db on server which users
+		register by you who has no complete information which are showing in table in Admin panel.
+	for eg: type etc.(see  in admin panel view)
+	b) updated bio and address and profile picture api
+	c) Take help of Chetanya sir and resolve your errors in userApp.
+
+3) Vivek
+	a) Row filter(page filter) not working (coordinate with Riyasat)
+	b) In filter "All" not working properly.
+	c) Compelete your websocket task by today and you can take help of Garima for this. But firstly try it own.
+
+
+Note : -
+
+1) If you are facing any problem in the code plz google it first and try to solve it .
+2) Daily give me your status before starting your work(on skype) before 11 o'clock.
+3) Please work in team and coordinate with all.
+
+Thank you			

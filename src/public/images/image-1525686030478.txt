@@ -1,0 +1,42 @@
+    Update one field and all data field will remove
+
+
+    export const updateBrands = async (req: Request, res: Response) => {
+    await usermongos.findOne({ _id: req.body._id }, (err, data) => {
+        if (data) {
+            usermongos.updateOne({ _id: req.body._id },
+                {
+                    $set: {
+                        brandName: req.body.brandName,
+                        description: req.body.description,
+                        supplierName: req.body.suplierName,
+                        authPerson: req.body.authPerson,
+                        designation: req.body.designation,
+                        address: req.body.address,
+                        town: req.body.town,
+                        state: req.body.state,
+                        // img: req.file.filename,
+                        status: req.body.status
+                    }
+                }, (err, data) => {
+                    if (err)
+                        throw err
+                    else
+                        res.status(200).send('Product successfuly change....')
+                })
+        }
+    })
+}
+
+
+
+
+If status is "Yes" or "No"
+
+await usermongos.findOne({ status: req.body.status }, (err, data) => {
+        if (req.body.status === 'Yes') {
+            res.json(true)
+        } else {
+            res.send(false)
+        }
+    })
